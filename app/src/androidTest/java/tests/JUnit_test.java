@@ -14,7 +14,7 @@ public class JUnit_test  extends ActivityInstrumentationTestCase2<MainActivity>{
     public JUnit_test() {
         super(MainActivity.class);
     }
-
+/*
     public void test_first() {
         mainActivity = getActivity();
 
@@ -24,11 +24,10 @@ public class JUnit_test  extends ActivityInstrumentationTestCase2<MainActivity>{
         assertEquals("Bye World", tester);
 
     }
-
-    public void test_addPos() {
-        TextView textView =(TextView) mainActivity.findViewById(R.id.arg1);
-        TextView textView2 =(TextView) mainActivity.findViewById(R.id.arg2);
-
+*/
+    public void test_sum() {
+        mainActivity =getActivity();
+        assertEquals(mainActivity.add(3,4),7);
     }
 
 
